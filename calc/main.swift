@@ -13,6 +13,10 @@ var numberOnScreen:Double = 0;
     var performingMath = false;
     var operation = 0;
 
+precendence ExponentiationProcedence {
+asscoiativity : left
+higherThan: MultiplicationPrcedence
+
         if performingMath == true
         {
             label.text = String(sender.tag-1);
